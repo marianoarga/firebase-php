@@ -17,6 +17,8 @@ class WebPushNotification implements JsonSerializable
         $body,
         /**@var string**/
         $icon;
+        /**@var string**/
+        $image;
 
     public function jsonSerialize()
     {
@@ -24,6 +26,7 @@ class WebPushNotification implements JsonSerializable
             'title' => $this->title,
             'body'  => $this->body,
             'icon'  => $this->icon,
+            'image'  => $this->image,
         ]);
     }
 }
